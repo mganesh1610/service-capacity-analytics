@@ -1,0 +1,40 @@
+{
+  "source": "https://archive.ics.uci.edu/dataset/498/incident+management+process+enriched+event+log",
+  "download_url": "https://archive.ics.uci.edu/static/public/498/incident+management+process+enriched+event+log.zip",
+  "zip_sha256": "6294e29a311647306bfdfc85783f7df66517c197b9cd49aa5ee36ba9c525d1d6",
+  "csv_sha256": "fd184bbfd62329cfe093e99da2ea7071905f2ead91900b448eb2635870821bef",
+  "event_rows": 141712,
+  "columns": 36,
+  "unique_incidents": 24918,
+  "snapshot_to_case_reduction_pct": 82.4165,
+  "snapshot_sum": 141712,
+  "groups": 71,
+  "weeks": 50,
+  "missing_closed": 0,
+  "invalid_closed_intervals": 0,
+  "sqlite_integrity": "ok",
+  "forecast": {
+    "complete_weeks": 49,
+    "evaluation_weeks": 45,
+    "mean4_mae": 130.79444444444445,
+    "last_week_mae": 82.44444444444444,
+    "next_week_mean4": 20.5
+  },
+  "capacity_scenario": {
+    "handling_minutes_per_case": 30,
+    "productive_hours_per_week": 30,
+    "planned_utilization": 0.8,
+    "volume": 20.5,
+    "scenario_fte": 1
+  },
+  "limits": [
+    "Public IT support data, not DSP customers or employer records.",
+    "Event snapshots are not independent cases. Equal snapshots are retained in input counts.",
+    "Elapsed calendar close time is not staff handling effort. Local timezone is unspecified.",
+    "Source made_sla semantics are preserved verbatim, not relabeled as measured compliance.",
+    "Historical backlog uses eventual closing timestamps and is retrospective, not an online reconstruction.",
+    "Capacity inputs are user-set assumptions; FTE is an illustrative scenario, not measured staffing need.",
+    "Final group is descriptive case attribution, not the historical owner at each week.",
+    "First and final intake weeks excluded from forecasting, as is closure-only follow-up. No hiring or customer outcome claimed."
+  ]
+}
