@@ -1,0 +1,29 @@
+{
+  "zip_sha256": "6294e29a311647306bfdfc85783f7df66517c197b9cd49aa5ee36ba9c525d1d6",
+  "raw_event_snapshots": 141712,
+  "unique_service_cases": 24918,
+  "consolidation_row_reduction_pct": 82.42,
+  "assignment_groups_evaluated": 71,
+  "kb_solution_adopted_cases": 3657,
+  "kb_solution_adoption_rate_pct": 14.68,
+  "kb_median_resolution_hours": 411.82,
+  "non_kb_median_resolution_hours": 132.83,
+  "first_touch_vs_reassigned_sla": {
+    "group_1_rate_pct": 78.39,
+    "group_2_rate_pct": 45.58,
+    "abs_diff_pp": 32.81,
+    "z_stat": 53.5578,
+    "p_value": 0.0
+  },
+  "kb_vs_non_kb_sla": {
+    "group_1_rate_pct": 25.98,
+    "group_2_rate_pct": 69.86,
+    "abs_diff_pp": -43.88,
+    "z_stat": -50.8928,
+    "p_value": 0.0
+  },
+  "groups_escalated_to_pes_owners": 42,
+  "groups_suppressed_k_anonymity": 8,
+  "quality_and_privacy_checks_passed": 12,
+  "quality_and_privacy_checks_total": 12
+}
