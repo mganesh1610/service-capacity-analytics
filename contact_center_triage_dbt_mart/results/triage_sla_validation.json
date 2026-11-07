@@ -1,0 +1,19 @@
+{
+  "zip_sha256": "6294e29a311647306bfdfc85783f7df66517c197b9cd49aa5ee36ba9c525d1d6",
+  "raw_event_snapshots": 141712,
+  "unique_cases": 24918,
+  "distinct_queues": 71,
+  "first_touch_triage_cases": 13549,
+  "reassigned_multi_hop_cases": 11369,
+  "first_touch_median_close_hours": 121.25,
+  "reassigned_median_close_hours": 242.57,
+  "median_resolution_time_reduction_pct": 50.01,
+  "sla_compliance_comparison": {
+    "first_touch_rate_pct": 78.39,
+    "reassigned_rate_pct": 45.58,
+    "abs_diff_pp": 32.81,
+    "rel_improvement_pct": 71.98,
+    "z_stat": 53.5578,
+    "p_value": 0.0
+  }
+}
