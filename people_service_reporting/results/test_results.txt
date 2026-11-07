@@ -1,0 +1,11 @@
+test_allowlist (test_reporting.ReleaseBoundaries.test_allowlist) ... ok
+test_exact_threshold (test_reporting.ReleaseBoundaries.test_exact_threshold) ... ok
+test_invalid_threshold (test_reporting.ReleaseBoundaries.test_invalid_threshold) ... ok
+test_negative_duration_excluded (test_reporting.ReleaseBoundaries.test_negative_duration_excluded) ... ok
+test_small_cell (test_reporting.ReleaseBoundaries.test_small_cell) ... ok
+test_small_complement (test_reporting.ReleaseBoundaries.test_small_complement) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.000s
+
+OK

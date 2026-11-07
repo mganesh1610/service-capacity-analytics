@@ -1,5 +1,7 @@
 # Service Capacity & Workload Analytics
 
+New reporting module: [People Service Reporting](people_service_reporting/README.md) adds aggregate-only recurring scorecards, documented release rules, small-cell suppression and an analyst/source-owner handoff.
+
 An independent, public-data project for reviewing support workload, handoffs and staffing assumptions. Built with Codex using Python's standard library and SQLite. It demonstrates service-management analytics, not a live consulting operation.
 
 ## Run
