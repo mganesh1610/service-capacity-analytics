@@ -70,13 +70,7 @@ def run(db_path,output,minimum=10):
         suppressed_count_cells=sum(r['case_count'] is None for r in report),
         released_rate_cells=sum(r['reassignment_share'] is not None for r in report),
         row_reduction_pct=round((1-len(rows)/source_events)*100,4),
-        checks=checks,checks_passed=sum(checks.values()),
-        limits=['Public IT-support cases provide a comparable service reporting implementation; they are not HR or employer records.',
-          'Final assignment group is not the historical owner at opening.',
-          'Calendar elapsed closure time is not employee effort or handling time.',
-          'Reassignment share is not measured escalation or first-contact resolution.',
-          'Suppression is a local release rule, not differential privacy. Do not combine extracts to reconstruct cells.',
-          'No all-group totals are released. CSV filtering is not identity-based access control; access must be configured in the BI tenant.'])
+        checks=checks,checks_passed=sum(checks.values()))
     (output/'validation.json').write_text(json.dumps(summary,indent=2)+'\n')
     return summary
 

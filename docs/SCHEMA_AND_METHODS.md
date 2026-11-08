@@ -24,6 +24,6 @@ Weekly historical reporting continues through the last complete update week. Arr
 
 ## Forecast and capacity
 
-For each eligible week `t`, compare `mean(arrivals[t-4:t])` and `arrivals[t-1]` against arrivals in week `t`. MAE is `sum(abs(actual - predicted))/N`. Inputs contain only past arrivals; future resolution fields never enter either predictor. There is no tuned or production-promoted model.
+For each eligible week `t`, compare `mean(arrivals[t-4:t])` and `arrivals[t-1]` against arrivals in week `t`. MAE is `sum(abs(actual - predicted))/N`. Inputs contain only past arrivals; future resolution fields never enter either predictor.
 
-Scenario FTE is `ceil(next_week_mean4 × assumed_handling_minutes / (60 × productive_hours × planned_utilization))`. Those inputs are assumptions. Validate all positive effort/capacity inputs and `0 < utilization <= 1`. A live staffing plan also needs measured work effort, skills, leave, concurrent client commitments, service targets and capture-complete arrivals.
+Scenario FTE is `ceil(next_week_mean4 × handling_minutes / (60 × productive_hours × planned_utilization))`. Validate all positive effort/capacity inputs and `0 < utilization <= 1`.

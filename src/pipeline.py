@@ -166,15 +166,7 @@ def run(data_zip, output, minutes=30, hours=30, utilization=.8):
         snapshot_sum=sum(c['snapshots'] for c in cases),groups=len(groups),weeks=len(weeks),
         missing_closed=sum(c['closed_at'] is None for c in cases),
         invalid_closed_intervals=sum(c['invalid_closed_interval'] for c in cases),
-        sqlite_integrity=integrity,forecast=pred,capacity_scenario=scenario,
-        limits=['Public IT support data, not DSP customers or employer records.',
-            'Event snapshots are not independent cases. Equal snapshots are retained in input counts.',
-            'Elapsed calendar close time is not staff handling effort. Local timezone is unspecified.',
-            'Source made_sla semantics are preserved verbatim, not relabeled as measured compliance.',
-            'Historical backlog uses eventual closing timestamps and is retrospective, not an online reconstruction.',
-            'Capacity inputs are user-set assumptions; FTE is an illustrative scenario, not measured staffing need.',
-            'Final group is descriptive case attribution, not the historical owner at each week.',
-        'First and final intake weeks excluded from forecasting, as is closure-only follow-up. No hiring or customer outcome claimed.'])
+        sqlite_integrity=integrity,forecast=pred,capacity_scenario=scenario)
     assert summary['snapshot_sum']==summary['event_rows']
     assert summary['unique_incidents']==len({c['case_id'] for c in cases})
     assert integrity=='ok'

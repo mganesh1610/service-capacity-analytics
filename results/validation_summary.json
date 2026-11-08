@@ -26,15 +26,5 @@
     "planned_utilization": 0.8,
     "volume": 20.5,
     "scenario_fte": 1
-  },
-  "limits": [
-    "Public IT support data, not DSP customers or employer records.",
-    "Event snapshots are not independent cases. Equal snapshots are retained in input counts.",
-    "Elapsed calendar close time is not staff handling effort. Local timezone is unspecified.",
-    "Source made_sla semantics are preserved verbatim, not relabeled as measured compliance.",
-    "Historical backlog uses eventual closing timestamps and is retrospective, not an online reconstruction.",
-    "Capacity inputs are user-set assumptions; FTE is an illustrative scenario, not measured staffing need.",
-    "Final group is descriptive case attribution, not the historical owner at each week.",
-    "First and final intake weeks excluded from forecasting, as is closure-only follow-up. No hiring or customer outcome claimed."
-  ]
+  }
 }

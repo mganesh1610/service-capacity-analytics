@@ -17,13 +17,5 @@
     "source_case_count": true,
     "source_event_conservation": true
   },
-  "checks_passed": 8,
-  "limits": [
-    "Public IT-support cases provide a comparable service reporting implementation; they are not HR or employer records.",
-    "Final assignment group is not the historical owner at opening.",
-    "Calendar elapsed closure time is not employee effort or handling time.",
-    "Reassignment share is not measured escalation or first-contact resolution.",
-    "Suppression is a local release rule, not differential privacy. Do not combine extracts to reconstruct cells.",
-    "No all-group totals are released. CSV filtering is not identity-based access control; access must be configured in the BI tenant."
-  ]
+  "checks_passed": 8
 }

@@ -14,8 +14,8 @@ Run the pipeline and tests, inspect the source hash, reconcile 141,712 snapshots
 
 ## Enablement walkthrough
 
-Explain event-versus-case grain, reproduce one week by SQL, change a capacity assumption and interpret the resulting scenario. Have the learner distinguish elapsed resolution time from active handling time. This is a proposed training exercise; no completed customer certification or onboarding improvement is claimed.
+Explain event-versus-case grain, reproduce one week by SQL, configure a capacity parameter and interpret the resulting scenario. Have the learner distinguish elapsed resolution time from active handling time.
 
 ## Product feedback template
 
-Capture problem, affected workflow, evidence/query, customer impact to verify, possible change, owner, validation gate and rollback condition. Use reproducible incident evidence before escalating a feature request. The public log contains no direct customer feedback or product roadmap decisions.
+Capture problem, affected workflow, evidence/query, customer impact, proposed change, owner, validation gate and rollback condition. Use reproducible incident evidence before escalating a feature request.
