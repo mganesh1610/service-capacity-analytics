@@ -1,0 +1,13 @@
+priority_tier,routing_band,ticket_count,source_snapshots,sla_compliant_tickets,sla_compliance_pct,mean_resolution_hours,reopened_tickets
+P1_Critical,0_First_Owner_Direct,112,822,4,3.5714,346.16,0
+P1_Critical,1_Single_Handoff,83,692,1,1.2048,214.93,0
+P1_Critical,2_Multi_Hop_Escalation,75,792,0,0.0,203.12,0
+P2_High,0_First_Owner_Direct,153,785,1,0.6536,167.63,1
+P2_High,1_Single_Handoff,118,766,1,0.8475,124.78,0
+P2_High,2_Multi_Hop_Escalation,137,1546,0,0.0,159.35,4
+P3_Moderate,0_First_Owner_Direct,12803,48560,10188,79.5751,97.22,60
+P3_Moderate,1_Single_Handoff,5873,34741,3420,58.2326,169.44,63
+P3_Moderate,2_Multi_Hop_Escalation,4790,48783,1537,32.0877,384.28,145
+P4_Low_Planning,0_First_Owner_Direct,481,1817,428,88.9813,171.55,1
+P4_Low_Planning,1_Single_Handoff,164,960,138,84.1463,345.23,0
+P4_Low_Planning,2_Multi_Hop_Escalation,129,1448,85,65.8915,505.33,1

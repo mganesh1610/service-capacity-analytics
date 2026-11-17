@@ -1,0 +1,81 @@
+{
+  "generated_at_utc": "2026-11-17T19:56:44.930616+00:00",
+  "source_sha256": "6294e29a311647306bfdfc85783f7df66517c197b9cd49aa5ee36ba9c525d1d6",
+  "source_events": 141712,
+  "canonical_jira_tickets": 24918,
+  "reporting_row_reduction_pct": 82.4165,
+  "active_dispatch_queues": 72,
+  "overall_contract_sla_compliance_pct": 63.42,
+  "hypothesis_tests": {
+    "direct_owner_vs_multi_hop_sla_z_test": {
+      "rate_a": 0.783895,
+      "rate_b": 0.316118,
+      "diff_pp": 46.7778,
+      "z_stat": 60.0478,
+      "p_value_two_sided": 0.0
+    },
+    "multi_hop_vs_direct_resolution_hours_welch_t": {
+      "n_a": 5131,
+      "n_b": 13506,
+      "mean_a_hours": 378.667,
+      "mean_b_hours": 103.036,
+      "diff_hours": 275.631,
+      "t_stat": 24.0843,
+      "p_value_two_sided": 3.6491345146377526e-128
+    }
+  },
+  "qa_gates_passed": 10,
+  "qa_gates_total": 10,
+  "qa_gates": [
+    {
+      "gate_id": "JIRA-01",
+      "name": "Source ZIP SHA-256 matches UCI benchmark",
+      "passed": true
+    },
+    {
+      "gate_id": "JIRA-02",
+      "name": "Exact 141,712 event snapshots ingested",
+      "passed": true
+    },
+    {
+      "gate_id": "JIRA-03",
+      "name": "Exact 24,918 canonical Jira tickets deduplicated",
+      "passed": true
+    },
+    {
+      "gate_id": "JIRA-04",
+      "name": "100% snapshot-to-ticket conservation",
+      "passed": true
+    },
+    {
+      "gate_id": "JIRA-05",
+      "name": "All 4 P1-P4 Jira SLA tiers populated",
+      "passed": true
+    },
+    {
+      "gate_id": "JIRA-06",
+      "name": "70+ active dispatch queues profiled",
+      "passed": true
+    },
+    {
+      "gate_id": "JIRA-07",
+      "name": "Zero negative resolution durations",
+      "passed": true
+    },
+    {
+      "gate_id": "JIRA-08",
+      "name": "Statistically significant first-owner SLA lift (p < 1e-10)",
+      "passed": true
+    },
+    {
+      "gate_id": "JIRA-09",
+      "name": "Reporting row reduction > 80%",
+      "passed": true
+    },
+    {
+      "gate_id": "JIRA-10",
+      "name": "SQLite integrity_check == ok",
+      "passed": true
+    }
+  ]
+}
